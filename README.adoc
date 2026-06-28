@@ -2,7 +2,7 @@
 
 image:https://badge.fury.io/rb/adocconf.svg["Gem Version", link="https://badge.fury.io/rb/adocconf"]
 
-Inspired by https://github.com/tj/mdconf[mdconf], adocconf allows you to write configuration as documentation, and documentation as configuration in the AsciiDoc format.
+Inspired by https://github.com/tj/mdconf[mdconf], adocconf allows you to write configuration in the AsciiDoc format.
 
 Usage:
 
