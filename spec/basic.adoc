@@ -1,0 +1,56 @@
+////
+This is a test for adocconf. This text should be ignored by the parser.
+////
+
+:default-host: default
+:default-port: 8080
+:env: prod
+
+== Servers
+This text should be ignored by the parser.
+
+=== server1
+
+host:: localhost
+port:: 80
+
+=== server2
+
+host:: {default-host}
+port:: {default-port}
+
+=== server3
+
+ifeval::["{env}" == "prod"]
+host:: prod.example.com
+port:: 443
+endif::[]
+
+ifeval::["{env}" == "dev"]
+host:: localhost
+port:: 4343
+endif::[]
+
+== Features
+
+* login
+* signup
+* analytics
+
+== Other Servers
+
+[cols="2,2,1",options="header"]
+|===
+| Name | Host | Port
+| server1 | {default-host} | {default-port}
+| server2 | remote | 9090
+|===
+
+ifeval::["{env}" == "prod"]
+[options="header"]
+|===
+| Name | Host | Port
+| server3 | server3.test.com | 80
+| server4 | server4.test.com | 443
+|===
+endif::[]
