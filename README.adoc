@@ -1,6 +1,6 @@
 == adocconf
 
-image:https://badge.fury.io/rb/adocconf.svg["Gem Version", link="https://badge.fury.io/rb/adocconf"]
+image:https://img.shields.io/gem/v/adocconf[Gem Version]
 
 Inspired by https://github.com/tj/mdconf[mdconf], adocconf allows you to write configuration in the AsciiDoc format.
 
