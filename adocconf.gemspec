@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "adocconf"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.authors = ["Nathan Hammer"]
   s.summary = "Create configuration using AsciiDoc"
   s.description = "adocconf allows you to create both configuration using AsciiDoc."
